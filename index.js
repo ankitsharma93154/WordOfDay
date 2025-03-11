@@ -25,7 +25,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 app.get("/", (_, res) => res.send("Express on Vercel"));
 
 // MERGED ROUTE: Word of the day endpoint
-app.get("/api/wordofday", async (req, res) => {
+app.get("/get-wordofday", async (req, res) => {
   try {
     // Get current date in YYYY-MM-DD format
     const today = new Date().toISOString().split("T")[0];
