@@ -22,7 +22,7 @@ app.use(
     setHeaders: (res) => {
       res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
     },
-  })
+  }),
 );
 
 // Initialize Supabase client - create once, reuse everywhere
